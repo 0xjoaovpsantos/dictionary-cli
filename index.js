@@ -11,27 +11,34 @@ const data = await response.json();
 
 const { meanings } = data[0];
 
+console.log(``)
 console.log(`Word: ${data[0].word}`);
+console.log(``)
 
 for (const meaning of meanings) {
-    console.log("------------------------");
-    console.log(`part of speech: ${meaning.partOfSpeech}`);
+    console.log(`Part of speech: ${meaning.partOfSpeech}`);
     console.log('');
 
     const { definitions, synonyms, antonyms } = meaning;
 
+    let definitionsArray = [];
+
     for (const definition of definitions) {
-        console.log(`definition: ${definition.definition}`)
-        console.log('');
+        definitionsArray.push(definition.definition);
     }
 
-    for (const synonym of synonyms) {
-        console.log(`synonym: ${synonym}`)
-        console.log('');
+    if (definitions) {
+        console.log(`Definitions: ${definitionsArray.join(" ")}`)
+        console.log(``) 
     }
 
-    for (const antonym of antonyms) {
-        console.log(`antonym: ${antonym}`)
-        console.log('');
+    if (synonyms.length > 0) {
+        console.log(`Synonyms: ${synonyms.join(", ")}`)
+        console.log(``)
+    }
+
+    if (antonyms.length > 0) {
+        console.log(`Antonyms: ${antonyms.join(", ")}`)
+        console.log(``)
     }
 }
