@@ -6,7 +6,9 @@ const { argv } = yargs(hideBin(process.argv));
 
 const word = argv._[0];
 
-const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+const response = await fetch(
+  `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+);
 const data = await response.json();
 
 const { meanings } = data[0];
