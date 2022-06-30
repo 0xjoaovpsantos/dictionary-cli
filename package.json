@@ -7,10 +7,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src/ -d dist/",
-    "eslint": "eslint src/dictionary-cli.js --fix",
+    "eslint": "eslint --fix",
     "prettier": "prettier --write .",
     "prepublish": "yarn run build",
-    "flow": "flow"
+    "flow": "flow",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["npm run eslint", "npm run prettier", "npm run flow status"]
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +35,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "flow-bin": "^0.181.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1"
   }
 }
