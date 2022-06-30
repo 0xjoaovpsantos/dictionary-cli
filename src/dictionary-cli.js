@@ -1,8 +1,10 @@
+// @flow
+
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import fetch from 'node-fetch';
 
-const fetchApi = async (word) => {
+const fetchApi = async (word: string) => {
   const response = await fetch(
     `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
@@ -12,7 +14,7 @@ const fetchApi = async (word) => {
   return data;
 };
 
-const formatArrayResponse = (array, description) => {
+const formatArrayResponse = (array: Array<string>, description: string) => {
   if (Array.isArray(array) && array.length > 0) {
     console.log(`${description}: ${array.join(' ')} \n`);
   }
@@ -28,7 +30,7 @@ const formatResponse = (data) => {
 
     const { definitions, synonyms, antonyms } = meaning;
 
-    const definitionsArray = [];
+    const definitionsArray: Array<string> = [];
 
     for (const definition of definitions) {
       definitionsArray.push(definition.definition);
@@ -47,7 +49,7 @@ const verifyIfInputIsValid = (argv) => {
 export const execute = async () => {
   const { argv } = yargs(hideBin(process.argv));
 
-  const word = argv._[0];
+  const word: string = argv._[0];
 
   const data = await fetchApi(word);
 

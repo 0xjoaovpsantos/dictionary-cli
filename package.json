@@ -6,9 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel index.js -d dist",
+    "build": "babel src/ -d dist/",
     "eslint": "eslint src/dictionary-cli.js --fix",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepublish": "yarn run build",
+    "flow": "flow"
   },
   "author": "",
   "license": "ISC",
@@ -22,10 +24,12 @@
     "@babel/core": "^7.18.5",
     "@babel/eslint-parser": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
+    "@babel/preset-flow": "^7.18.6",
     "eslint": "^8.18.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "flow-bin": "^0.181.2",
     "prettier": "2.7.1"
   }
 }
