@@ -5,7 +5,7 @@ import { hideBin } from 'yargs/helpers';
 import fetch from 'node-fetch';
 import type { typeApiResponse, typeFormatArray } from './types';
 
-const fetchApi = async (word: string): Promise<typeApiResponse[]> => {
+export const fetchApi = async (word: string): Promise<typeApiResponse[]> => {
   const response = await fetch(
     `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
@@ -15,7 +15,7 @@ const fetchApi = async (word: string): Promise<typeApiResponse[]> => {
   return data;
 };
 
-const formatArray = ({ array, description }: typeFormatArray) => {
+export const formatArray = ({ array, description }: typeFormatArray) => {
   if (Array.isArray(array) && array.length > 0) {
     console.log(`${description}: ${array.join(' ')} \n`);
   }
