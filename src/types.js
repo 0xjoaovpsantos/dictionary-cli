@@ -1,19 +1,20 @@
 // @flow
 
-type meaning = {
-  partOfSpeech: string,
-};
-
 type definition = {
   definition: string,
+};
+
+type meaning = {
+  partOfSpeech: string,
+  definitions: definition[],
+  synonyms: string[],
+  antonyms: string[],
 };
 
 export type typeApiResponse = {
   word: string,
   meanings: meaning[],
-  definitions: definition[],
-  synonyms: string[],
-  antonyms: string[],
+  title?: string,
 };
 
 export type typeFormatArray = {

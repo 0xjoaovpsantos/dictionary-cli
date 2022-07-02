@@ -5,7 +5,7 @@ import { hideBin } from 'yargs/helpers';
 import fetch from 'node-fetch';
 import type { typeApiResponse, typeFormatArray } from './types';
 
-const fetchApi = async (word: string): Promise<typeApiResponse> => {
+const fetchApi = async (word: string): Promise<typeApiResponse[]> => {
   const response = await fetch(
     `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
@@ -21,7 +21,7 @@ const formatArray = ({ array, description }: typeFormatArray) => {
   }
 };
 
-const showFormattedResponse = (data: typeApiResponse) => {
+const showFormattedResponse = (data: typeApiResponse[]) => {
   const { meanings } = data[0];
 
   console.log(`Word: ${data[0].word} \n`);
@@ -44,13 +44,19 @@ const showFormattedResponse = (data: typeApiResponse) => {
 };
 
 const execute = async () => {
-  const { argv } = yargs(hideBin(process.argv));
+  try {
+    const { argv } = yargs(hideBin(process.argv));
 
-  const word: string = argv._[0];
+    const word: string = argv._[0];
 
-  const data: typeApiResponse = await fetchApi(word);
+    const data: typeApiResponse[] = await fetchApi(word);
 
-  showFormattedResponse(data);
+    showFormattedResponse(data);
+  } catch (error) {
+    console.log(
+      'Oops, something went wrong, check your internet connection and try again in a few minutes.'
+    );
+  }
 };
 
 execute();
