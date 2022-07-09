@@ -47,6 +47,7 @@
 - [Babel](https://babeljs.io/) to compile JavaScript
 - [ESLint](https://eslint.org/) to standardize
 - [Prettier](https://prettier.io/) to format code
+- [GitHub Actions](https://github.com/features/actions) to CI
 
 # :construction_worker: Installation
 
