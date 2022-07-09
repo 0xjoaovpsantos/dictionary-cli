@@ -38,7 +38,6 @@
 - [ESLint](https://eslint.org/) to standardize
 - [Prettier](https://prettier.io/) to format code
 
-
 # :construction_worker: Installation
 
 **You need to install [Node.js](https://pt-br.reactjs.org/) and [NPM](https://www.npmjs.com/) first, then in order to clone the project via HTTPS, run this command:**
