@@ -77,7 +77,21 @@ And run:
 Output:
 
 <p align="center">
-   <img src=".github/preview/example-output.png" width="1000"/>
+   <img src=".github/preview/example-output-linux.png" width="1000"/>
+</p>
+
+**On Windows**
+
+Run
+
+```
+  ./dictionary-cli.js "Hello"
+```
+
+Output:
+
+<p align="center">
+   <img src=".github/preview/example-output-windows.png" width="1000"/>
 </p>
 
 <br/>
