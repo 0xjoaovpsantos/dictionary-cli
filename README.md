@@ -3,27 +3,37 @@
 > CLI application to find meaning of English Words
 
 <a href="https://github.com/joaovictorpsantos">
-<img alt="Autor" src="https://img.shields.io/badge/autor-JoãoVictorPereiraSantos-DB3833?style=flat-square">
+  <img alt="Autor" src="https://img.shields.io/badge/autor-JoãoVictorPereiraSantos-0A7BBB">
+</a>
+
+<a href="https://twitter.com/intent/follow?screen_name=_joaovictorps">
+  <img src="https://img.shields.io/twitter/follow/_joaovictorps?style=social&logo=twitter" alt="follow on Twitter">
+</a>
+
+<br/>
+
+<a href="https://github.com/joaovictorpsantos/dictionary-cli/actions">
+  <img alt="Tests Passing" src="https://github.com/joaovictorpsantos/dictionary-cli/actions/workflows/unit-test.yml/badge.svg" />
 </a>
 
 <a href="#">
-<img alt="Linguagens" src="https://img.shields.io/github/languages/count/joaovictorpsantos/dictionary-cli?color=DB3833&style=flat-square">
+  <img alt="Linguagens" src="https://img.shields.io/github/languages/count/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
 
 <a href="https://github.com/joaovictorpsantos/dictionary-cli/stargazers">
-<img alt="Stars" src="https://img.shields.io/github/stars/joaovictorpsantos/dictionary-cli?color=DB3833&style=flat-square">
+  <img alt="Stars" src="https://img.shields.io/github/stars/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
 
 <a href="https://github.com/joaovictorpsantos/dictionary-cli/network/members">
-<img alt="Forks" src="https://img.shields.io/github/forks/joaovictorpsantos/dictionary-cli?color=DB3833&style=flat-square">
+  <img alt="Forks" src="https://img.shields.io/github/forks/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
 
 <a href="#">
-<img alt="Tamanho do código em bytes" src="https://img.shields.io/github/languages/code-size/joaovictorpsantos/dictionary-cli?color=DB3833&style=flat-square">
+  <img alt="Tamanho do código em bytes" src="https://img.shields.io/github/languages/code-size/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
 
 <a href="https://github.com/joaovictorpsantos/social-app/commits/master">
-<img alt="Commits" src="https://img.shields.io/github/last-commit/joaovictorpsantos/dictionary-cli?color=DB3833&style=flat-square">
+  <img alt="Commits" src="https://img.shields.io/github/last-commit/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
 
 # :rocket: Features
