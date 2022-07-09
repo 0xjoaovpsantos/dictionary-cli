@@ -20,14 +20,6 @@
   <img alt="Linguagens" src="https://img.shields.io/github/languages/count/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
 
-<a href="https://github.com/joaovictorpsantos/dictionary-cli/stargazers">
-  <img alt="Stars" src="https://img.shields.io/github/stars/joaovictorpsantos/dictionary-cli?color=0A7BBB">
-</a>
-
-<a href="https://github.com/joaovictorpsantos/dictionary-cli/network/members">
-  <img alt="Forks" src="https://img.shields.io/github/forks/joaovictorpsantos/dictionary-cli?color=0A7BBB">
-</a>
-
 <a href="#">
   <img alt="Tamanho do código em bytes" src="https://img.shields.io/github/languages/code-size/joaovictorpsantos/dictionary-cli?color=0A7BBB">
 </a>
