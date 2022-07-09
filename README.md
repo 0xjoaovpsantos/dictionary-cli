@@ -78,7 +78,7 @@ And run:
 Output:
 
 <p align="center">
-   <img src=".github/previews/example-output.png" width="500"/>
+   <img src=".github/preview/example-output.png" width="500"/>
 </p>
 
 <br/>
