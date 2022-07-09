@@ -43,7 +43,7 @@ const showFormattedResponse = (data: typeApiResponse[]) => {
   });
 };
 
-const execute = async () => {
+export const execute = async () => {
   try {
     const { argv } = yargs(hideBin(process.argv));
 
@@ -58,5 +58,3 @@ const execute = async () => {
     );
   }
 };
-
-execute();

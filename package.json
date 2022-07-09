@@ -8,7 +8,7 @@
     "build": "babel src/ -d lib/",
     "eslint": "eslint --fix",
     "prettier": "prettier --write .",
-    "prepublish": "yarn run build",
+    "prepublish": "npm run build",
     "flow": "flow",
     "prepare": "husky install",
     "lint-staged": "lint-staged",

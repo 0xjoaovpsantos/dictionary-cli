@@ -61,7 +61,25 @@ SSH URLs provide access to a Git repository via SSH, a secure protocol. If you h
 
 # :runner: Getting Started
 
-Coming soon
+**On Linux**
+
+The dictionary-cli file should have executable permission:
+
+```
+  chmod u+x ./dictionary-cli.sh
+```
+
+And run:
+
+```
+  ./dictionary-cli.sh "Hello"
+```
+
+Output:
+
+<p align="center">
+   <img src=".github/previews/example-output.png" width="500"/>
+</p>
 
 <br/>
 
